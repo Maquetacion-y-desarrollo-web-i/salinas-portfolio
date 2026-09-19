@@ -1,0 +1,75 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    font-family: 'ubuntu', sans-serif;
+}
+
+header {
+    background-image: url('../img/Diseño\ sin\ título\ \(2\).jpg');
+    background-size: cover;
+    background-position: center;
+    height: 89vh;
+}
+
+.navbar {
+    overflow: hidden;
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 20px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+
+.navbar a {
+    display: inline;
+    color: #6afb42;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-shadow: 0px 0px 1px #6afb42;
+}
+
+.btn-nav {
+    background-color: #a4049c60;
+    border: none;
+    margin: 20px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-radius: 15px;
+}
+
+h1 {
+    text-align: left;
+    margin: 0;
+    padding: 25px;
+    font-size: 25rem;
+    color: #81037b;
+    font-family: 'qwitcher Grypen', cursive;
+}
+
+.btn-nav:hover {
+    background-color: #fc8803;
+}
+
+.navbar li a:hover {
+    color: #81037b;
+}
