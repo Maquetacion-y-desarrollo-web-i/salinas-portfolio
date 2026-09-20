@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vane Salinas</title>
     <link rel="stylesheet" href="./assets/css/style.css">
-    <style>@import url('https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@400;700&display=swap');</style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Qwitcher+Grypen:wght@400;700&display=swap');
+    </style>
 </head>
 <body>
     <header>
@@ -24,7 +26,7 @@
 
     <main>
         <section id="home">
-            <h2>Lo difícil no es hacer que funcione. Es hacer que importe.</h2>
+            <h2>Lo difícil no es hacer que funcione.<span class="highlight">Es hacer que importe.</span></h2>
             <article>
                 <h3>Datos que orientan</h3>
                 <p>Entiendo los números antes de escribir código. Los datos no son el producto — son el mapa.</p>
@@ -42,7 +44,7 @@
                 <cite>Vanessa</cite>
             </quote>
             <article>
-                <h2>¿Qué podemos construir?</h2>
+                <h2>¿Qué podemos <span class="highlight">construir?</span></h2>
                 <h3>Aplicaciones Web</h3>
                 <p>Desde sitios institucionales hasta plataformas a medida, funcionales y escalables.</p>  
                 <h3>Aplicaciones Móviles</h3>
@@ -57,46 +59,46 @@
                 <p>Hay un problema.</p>
                 <p>SOLUCIÓN</p>
                 <p>Construimos algo.</p>
-                <button><a href="#contact">→ TENGO UN PROYECTO</a></button>
+                <button class="btn-contact"><a href="#contact">→ TENGO UN PROYECTO</a></button>
             </article>
         </section>
         <section id="projects">
             <h6>Proyectos</h6>
-            <h2>Lo que ya construí</h2>
+            <h2>Lo que ya <span class="highlight">construí</span></h2>
             <p>Proyectos reales con código real. Expandí cada uno para ver el proceso completo.</p>
-            <article>
+            <article class="project-card">
                 <h3>Ecosistema Digital SmartRoast S.A.</h3>
                 <p>Módulo de Experiencia del Usuario Final</p>
-                <span>Python</span>
-                <span>Streamlit</span>
-                <span>HTML5</span>
-                <span>CSS</span>
-                <span>JavaScript</span>
-                <span>GitHub Pages</span>
-                <button><a href="https://smartroast.streamlit.app/" target="_blank">→ Ver proyecto</a></button>
+                <span class="tag">Python</span>
+                <span class="tag">Streamlit</span>
+                <span class="tag">HTML5</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">GitHub Pages</span>
+                <a href="https://smartroast.streamlit.app/" target="_blank" class="btn btn-proj1">→ Ver proyecto</a>
             </article>
-            <article>
+            <article class="project-card">
                 <h3>Gestor de Tareas y Materias</h3>
                 <p>Primera App Móvil en React Native</p>
-                <span>React Native</span>
-                <span>Expo Snack</span>
-                <span>JavaScript</span>
-                <span>React Hooks</span>
-                <button><a href="https://task-manager-react-native.example.com/" target="_blank">→ Ver proyecto</a></button>
+                <span class="tag">React Native</span>
+                <span class="tag">Expo Snack</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">React Hooks</span>
+                <a href="https://task-manager-react-native.example.com/" target="_blank" class="btn btn-proj2">→ Ver proyecto</a>       
             </article>
-            <article>
+            <article class="project-card">
                 <h3>Sistema de Recomendación de Películas</h3>
                 <p>MLOps — Henry PI Nº1</p>
-                <span>Python</span>
-                <span>Pandas</span>
-                <span>Scikit-learn (KNN)</span>
-                <span>FastAPI</span>
-                <span>Render</span>
-                <button><a href="https://movie-recommendation.example.com/" target="_blank">→ Ver proyecto</a></button>
+                <span class="tag">Python</span>
+                <span class="tag">Pandas</span>
+                <span class="tag">Scikit-learn (KNN)</span>
+                <span class="tag">FastAPI</span>
+                <span class="tag">Render</span>
+                <a href="https://movie-recommendation.example.com/" target="_blank" class="btn btn-proj3">→ Ver proyecto</a>
             </article>
         </section>
         <section id="about">        
-            <h2>🚀 Developer en formación | +20 años de trayectoria operativa | Mobile & Data</h2>
+            <h2>Mas que <span class="highlight">código</span></h2>
             <article>
                 <p>No llevo veinte años programando — llevo veinte años resolviendo, sosteniendo procesos y adaptándome a cada rol que la vida me pidió. Hoy aplico esa metodología a construir apps e interfaces: pienso, diseño, programo, analizo y colaboro — combino una mente analítica capaz de resolver problemas complejos con la paciencia milimétrica de quien domina un oficio manual.</p>
                 <ul>
@@ -123,7 +125,7 @@
         </section>
         <section id="contact">
             <h6>Empecemos</h6>
-            <h2>¿Construimos algo juntos?</h2>
+            <h2>¿Construimos algo <span class="highlight">juntos?</span></h2>
             <p>Contame tu idea, tu desafío o simplemente conversemos. Me encantan las buenas conversaciones que terminan en grandes cosas.</p>
             <form action="mailto:hola@vsstudio.dev" method="POST" enctype="text/plain"></form>
                 <label for="name">Nombre:</label>

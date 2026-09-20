@@ -3,7 +3,7 @@ body{
     padding: 0;
     background-color: black;
     color: white;
-    font-family: 'ubuntu', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 header {
@@ -72,4 +72,75 @@ h1 {
 
 .navbar li a:hover {
     color: #81037b;
+}
+
+main {
+    padding: 50px;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+.highlight {
+    font-family: 'Caveat', cursive;
+    display: block;
+    color: #81037b;
+    font-style: italic;
+    font-size: 4.8rem;
+    font-weight: bold;
+}
+
+#contact h2 {
+    text-align: center;
+}
+
+#contact .highlight {
+    color: #6afb42;
+}
+
+.tag {
+    display: inline-block;
+    background-color: #81037b;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    margin-right: 10px;
+}
+
+.btn {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+}
+
+.btn-proj1 {
+    background-color: #03592a;
+}
+
+.btn-proj2 {
+    background-color: #ff9602;
+}
+
+.btn-proj3 {
+    background-color: #5d4eff;
+}
+
+@media screen and (max-width: 862px) {
+    .navbar ul{
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width: 1150px) {
+    h1 {
+        margin: 50px 0px 0px 0px;
+        padding: 75px 0px 0px 25px;
+        font-size: 15rem;
+    }
 }
