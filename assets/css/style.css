@@ -13,6 +13,10 @@ header {
     height: 89vh;
 }
 
+main {
+    padding: 50px;
+}
+
 .navbar {
     overflow: hidden;
     display: flex;
@@ -57,6 +61,14 @@ header {
     border-radius: 15px;
 }
 
+.btn-nav:hover {
+    background-color: #fc8803;
+}
+
+.navbar li a:hover {
+    color: #81037b;
+}
+
 h1 {
     text-align: left;
     margin: 0;
@@ -66,20 +78,18 @@ h1 {
     font-family: 'qwitcher Grypen', cursive;
 }
 
-.btn-nav:hover {
-    background-color: #fc8803;
-}
-
-.navbar li a:hover {
-    color: #81037b;
-}
-
-main {
-    padding: 50px;
-}
-
 h2 {
     font-size: 3rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h6 {
+    color: #6afb42;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 .highlight {
@@ -91,24 +101,6 @@ h2 {
     font-weight: bold;
 }
 
-#contact h2 {
-    text-align: center;
-}
-
-#contact .highlight {
-    color: #6afb42;
-}
-
-.tag {
-    display: inline-block;
-    background-color: #81037b;
-    color: white;
-    padding: 5px 10px;
-    border-radius: 5px;
-    font-size: 0.8rem;
-    margin-right: 10px;
-}
-
 .btn {
     border: none;
     padding: 10px 20px;
@@ -116,6 +108,14 @@ h2 {
     cursor: pointer;
     color: white;
     text-decoration: none;
+}
+
+.btn-contact {
+    background-color: #81037b;
+    display: block;
+    width: fit-content;
+    align-items: center;
+    margin: 0 auto;
 }
 
 .btn-proj1 {
@@ -128,6 +128,31 @@ h2 {
 
 .btn-proj3 {
     background-color: #5d4eff;
+}
+
+.tag {
+    display: inline-block;
+    background-color: #81037b;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    margin-right: 10px;
+}
+
+#contact h2 {
+    text-align: center;
+}
+
+#contact .highlight {
+    color: #6afb42;
+}
+
+#contact p {
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    padding-bottom: 20px;
 }
 
 @media screen and (max-width: 862px) {
