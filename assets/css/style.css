@@ -3,7 +3,7 @@ body{
     padding: 0;
     background-color: black;
     color: white;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'nunito-normal', sans-serif;
 }
 
 header {
@@ -75,7 +75,7 @@ h1 {
     padding: 25px;
     font-size: 25rem;
     color: #81037b;
-    font-family: 'qwitcher Grypen', cursive;
+    font-family: 'qwitcherGrypen-700', cursive;
 }
 
 h2 {
