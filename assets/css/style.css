@@ -1,8 +1,8 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: black;
-    color: white;
+    background: url("../img/fondo-body3.png") top / cover no-repeat fixed rgb(3, 3, 3);
+    color: rgb(0, 0, 0);
     font-family: 'nunito-normal', sans-serif;
 }
 
@@ -103,7 +103,7 @@ h6 {
 .highlight {
     font-family: 'Caveat', cursive;
     display: block;
-    color: #81037b;
+    color: #03ca35;
     font-style: italic;
     font-size: 4.8rem;
     font-weight: bold;
@@ -154,17 +154,23 @@ blockquote cite {
     font-weight: bold;
 }
 
+img {
+
+    height: 130px;
+    filter: drop-shadow(0px 0px 15px #6afb42); 
+}
+
 .btn {
     border: none;
     padding: 10px 20px;
     border-radius: 15px;
     cursor: pointer;
-    color: white;
+    color: rgb(255, 255, 255);
     text-decoration: none;
 }
 
 .btn-contact {
-    background-color: #81037b;
+    background-color: #c74103;
     display: block;
     width: fit-content;
     align-items: center;
