@@ -30,11 +30,11 @@ header {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    min-height: 100dvh;
+    min-height: 100svh; /*small viewport height, es la altura del viewport con la barra visible y no cambia al hacer scroll*/
 }
 
 main {
-    padding: 50px;
+    padding: 2rem;
 }
 
 .navbar {
@@ -53,7 +53,7 @@ main {
 }
 
 .avatar {
-    width: clamp(2.5rem, 10vw, 3.5rem); /* Ajusta el tamaño de la imagen según el ancho de la pantalla valores:(mínimo, ideal, máximo)*/
+    width: clamp(1rem, 4vw, 5rem); /* Ajusta el tamaño de la imagen según el ancho de la pantalla valores:(mínimo, ideal, máximo)*/
     aspect-ratio: 1; /* Mantiene la proporción de aspecto circular/cuadrada */
     border-radius: 50%;
     object-fit: cover;
@@ -99,6 +99,7 @@ main {
     backdrop-filter: blur(10px); /* Aplica un desenfoque al fondo del menú */
     border-radius: 15px;
     padding: 0.5rem 1rem;
+    background: linear-gradient(to right, #1c2d39, #14222a);
 }
 
 .menu li {
@@ -129,21 +130,52 @@ main {
     color: #81037b;
 }
 
+.name {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding-bottom: calc(5.5rem + env(safe-area-inset-bottom));
+    overflow: hidden;
+}
+
+.name img {
+    position: absolute;
+    top: 0;                                  
+    right: 0;
+    height: calc(100% - 5.5rem - env(safe-area-inset-bottom));
+    width: auto;
+    z-index: 1;
+}
+
 h1 {
     text-align: left;
     margin: 0;
     padding: 25px;
-    font-size: clamp(7rem, 8rem, 12rem);
+    font-size: clamp(8rem, 17vw, 20rem);
     color: #81037b;
     font-family: 'qwitcherGrypen-700', cursive;
+    z-index: 2;
 }
 
 h2 {
-    font-size: 3rem;
+    font-size: clamp(3.5rem, 7vw, 8rem);
+    z-index: 2;
+}
+
+.name h2 {
+    margin-top: auto;
+    padding-left: 0.75rem;
 }
 
 h3 {
     font-size: 2rem;
+    z-index: 2;
+}
+
+.name h3 {
+    font-size: clamp(1rem, 4vw, 3rem);
+    padding-left: 0.75rem;
 }
 
 h3 svg {
@@ -165,14 +197,16 @@ h6 {
     display: block;
     color: #00B8D9;
     font-style: italic;
-    font-size: 4rem;
+    font-size: clamp(4rem, 9vw, 9rem);
     font-weight: bold;
 }
 
 .card-container {
-    display: column;
-    justify-content: space-between;
-    gap: 50px;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 10rem auto;
+    gap: 7rem;
 }
 
 .card-container article {
@@ -188,7 +222,7 @@ blockquote {
     text-align: center;
     font-style: italic;
     font-size: 1.5rem;
-    width: 50%;
+    width: 75%;
     margin: 0 auto;
 }
 
@@ -289,9 +323,43 @@ blockquote cite {
     padding-bottom: 20px;
 }
 
-@media (min-width: 456px) {
-    h1 {
+@media (min-width: 768px){
+    .menu a {
+        font-size: 1.2rem;
+    }
+
+    .name {
+        padding-bottom: calc(6.5rem + env(safe-area-inset-bottom));
+    }
+
+    .name h1 {
         text-align:end;
-        padding-right: 50px;
+        transform: translateX(-13%);
+    }
+
+    .name img {
+        height: calc(100% - 13rem - env(safe-area-inset-bottom));
+        width: auto;
+        z-index: 1;
+    }
+
+    .name h2 {
+        line-height: 0.9;
+    }
+}
+
+@media (min-width: 1024px) {
+    .name {
+        padding-bottom: calc(10rem + env(safe-area-inset-bottom));
+    }
+}
+
+@media (max-width: 340px) {
+    h2 {
+        font-size: 2rem;
+    }
+
+    .highlight {
+        font-size: 2.5rem;
     }
 }
