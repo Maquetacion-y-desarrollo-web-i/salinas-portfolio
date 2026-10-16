@@ -5,14 +5,28 @@
 }
 
 body{
-    /*background: url("../img/fondo-body3.png") top / cover no-repeat fixed rgb(3, 3, 3);*/
-    color: rgb(0, 0, 0);
+    color: rgb(248, 243, 243);
     font-family: 'nunito-normal', sans-serif;
     padding-bottom: 5.5rem;
+    background-color: #0d1117;
+}
+
+body::before {  /* pseudo-elemento fijo detrás de todo */
+    content: "";
+    position: fixed;
+    height: 100dvh;
+    width: 100%;               
+    z-index: -1;            /* posicion de las capas - queda detrás del contenido */
+    background: 
+        radial-gradient(rgba(255, 255, 255, 0.075) 1px, transparent 1px) 0 0 / 40px 40px,
+        conic-gradient(from 225deg at 15% 95%, /*hacia donde empieza el degradado y donde esta el centro*/
+        rgba(90, 120, 160, 0.20) 0%,
+        rgba(80, 200, 230, 0.22) 40%,
+        rgba(40, 50, 70, 0.10) 75%,
+        rgba(90, 120, 160, 0.20) 100%);
 }
 
 header {
-    background: url('../img/hero-mobile.png') right / auto 75% no-repeat;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -50,7 +64,7 @@ main {
     white-space: nowrap; /*evita que el texto se divida en varias líneas*/
     overflow: hidden;
     text-overflow: ellipsis; /*reemplaza la parte oculta por …*/
-    color: #6afb42;
+    color: #00B8D9;
 }
 
 .btn-nav {
@@ -66,7 +80,7 @@ main {
     overflow: hidden;
     text-overflow: ellipsis;
     text-decoration: none;
-    color: #6afb42;
+    color: #00B8D9;
 }
 
 .btn-nav:hover {
@@ -95,7 +109,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: #6afb42;
+    color: #00B8D9;
     text-decoration: none;
     text-align: center;
     white-space: nowrap;
@@ -126,9 +140,6 @@ h1 {
 
 h2 {
     font-size: 3rem;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
 }
 
 h3 {
@@ -142,7 +153,7 @@ h3 svg {
 }
 
 h6 {
-    color: #6afb42;
+    color: #00B8D9;
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-top: 75px;
@@ -152,13 +163,10 @@ h6 {
 .highlight {
     font-family: 'Caveat', cursive;
     display: block;
-    color: #03ca35;
+    color: #00B8D9;
     font-style: italic;
     font-size: 4rem;
     font-weight: bold;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
 }
 
 .card-container {
@@ -170,8 +178,8 @@ h6 {
 .card-container article {
     flex: 1;
     text-align: center;
-    border-top: 3px solid #6afb4275;
-    box-shadow: 2px 2px 5px #6afb4225;
+    border-top: 3px solid #00B8D975;
+    box-shadow: 2px 2px 5px #00B8D925;
     padding: 10px;
     padding-bottom: 30px;
 }
@@ -188,7 +196,7 @@ blockquote cite {
     display: block;
     margin-top: 10px;
     font-size: 1rem;
-    color: #6afb42;
+    color: #00B8D9;
 }
 
 .idea {
@@ -208,7 +216,7 @@ blockquote cite {
 .idea-item img {
     width: 50%;
     height: auto;
-    filter: drop-shadow(0px 0px 15px #6afb42); 
+    filter: drop-shadow(0px 0px 15px #5EEAD4); 
 }
 
 .btn {
@@ -271,7 +279,7 @@ blockquote cite {
 }
 
 #contact .highlight {
-    color: #6afb42;
+    color: #00B8D9;
 }
 
 #contact p {
@@ -282,10 +290,6 @@ blockquote cite {
 }
 
 @media (min-width: 456px) {
-    header {
-        background: url('../img/hero-desktop.png') right / auto 65% no-repeat;
-    }
-
     h1 {
         text-align:end;
         padding-right: 50px;
